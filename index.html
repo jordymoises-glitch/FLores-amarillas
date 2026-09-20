@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#fff9e8">
+    <title>Para Alisson</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="transicionLuz">
+        <div class="halo-luz"></div>
+        <div class="rayos-luz"></div>
+        <div class="particulas-luz"></div>
+    </div>
+
+    <audio
+        id="audioFondo"
+        src="Img/F-A.mp3"
+        loop
+        preload="auto"
+    ></audio>
+
+    <main>
+
+        <section id="portada" class="escena activa">
+
+            <video
+                class="video-fondo"
+                src="Img/Esc1.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+            ></video>
+
+            <div class="velo"></div>
+
+            <div class="contenido-portada">
+
+                <div class="titulo-superior">
+                    <span>Para</span>
+                    <strong>Alisson</strong>
+                </div>
+
+                <div class="corazones">
+                    <div class="corazon corazon-a"><span>A</span></div>
+                    <div class="corazon corazon-o"><span>O</span></div>
+                </div>
+
+                <div class="stitch-contenedor">
+                    <video
+                        class="video-transparente"
+                        data-key-white
+                        src="Img/bella.mp4"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                    ></video>
+                </div>
+
+                <div class="flores-portada">
+                    <div class="flor-png flor-png-1"></div>
+                    <div class="flor-png flor-png-2"></div>
+                    <div class="flor-png flor-png-3"></div>
+                </div>
+
+                <button class="boton-principal" id="btnVerRegalo">
+                    Ver regalo
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section id="dedicatoria" class="escena">
+
+            <button class="boton-regresar" id="btnRegresarDedicatoria">
+                Volver
+            </button>
+
+            <div class="flores-decorativas flores-dedicatoria">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="contenido-dedicatoria">
+
+                <div class="pequena-flor"></div>
+
+                <h1>Para ti</h1>
+
+                <p>
+                   Que la distancia 🌍 y el tiempo sin hablar 💔 no sea una excusa para darte un lindo detalle como este.🎁✨🌹
+                </p>
+
+                <p>
+                    Sin importar la distancia, los sentimos encontrados hacia ti no cambian. 🌍
+                </p>
+
+                <button class="boton-principal" id="btnIrFlores">
+                    Continuar
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section id="segundaEscena" class="escena">
+
+            <video
+                class="video-fondo"
+                src="Img/Esc2.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+            ></video>
+
+            <div class="velo claro"></div>
+
+            <button class="boton-regresar" id="btnRegresarFlores">
+                Volver
+            </button>
+
+            <div class="contenido-segunda">
+
+                <h2>Interactúa con las flores</h2>
+
+                <p class="texto-flores">
+                   Cada flor 🌸 es un recordatorio de lo importante y especial que aún eres para mí ✨, y lo mucho que te quiero. ❤️💖
+                </p>
+
+                <div class="jardin">
+
+                    <div class="brillo-ramo"></div>
+
+                    <div class="ramo-animado">
+
+                        <video
+                            class="ramo-video"
+                            data-key-white
+                            src="Img/Ramo.mp4"
+                            autoplay
+                            muted
+                            loop
+                            playsinline
+                        ></video>
+
+                    </div>
+
+                    <div class="orbita-flores">
+
+                        <button
+                            class="flor-orbital flor-orbital-1"
+                            data-mensaje="Si te tuviera que dar una flor por cada vez que te he pensado, tuvieras un jardín tan hermoso como tú. 🌸🌷🌹🌼💐✨"
+                        >
+                            <img class="flor-orbital-icono" src="Img/Flor-p.png" alt="">
+                        </button>
+
+                        <button
+                            class="flor-orbital flor-orbital-2"
+                            data-mensaje="Si pudiera desear algo, desearía que por siempre seas tú. ✨💫❤️"
+                        >
+                            <img class="flor-orbital-icono" src="Img/Flor-p.png" alt="">
+                        </button>
+
+                        <button
+                            class="flor-orbital flor-orbital-3"
+                            data-mensaje="Eres una estrella ✨, pero no cualquier estrella... sino una estrella polar 🌟, mi estrella polar. 💫❤️"
+                        >
+                            <img class="flor-orbital-icono" src="Img/Flor-p.png" alt="">
+                        </button>
+
+                        <button
+                            class="flor-orbital flor-orbital-4"
+                            data-mensaje="Tus ojos, Alisson, son pura emoción 🥹✨, guardan misterios y una hermosa ilusión.💫👀💖"
+                        >
+                            <img class="flor-orbital-icono" src="Img/Flor-p.png" alt="">
+                        </button>
+
+                        <button
+                            class="flor-orbital flor-orbital-5"
+                            data-mensaje="Alisson, tu voz es como una canción 🎶🎧, aunque no la escuché, sigue impregnada en mi corazón y a veces despierta una ilusión. 💭✨"
+                        >
+                            <img class="flor-orbital-icono" src="Img/Flor-p.png" alt="">
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div id="mensajeFlor"></div>
+
+                <button
+                    class="boton-principal boton-flores"
+                    id="btnIrCarta"
+                >
+                    Continuar
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section id="escenaCarta" class="escena">
+
+            <button class="boton-regresar" id="btnRegresarCarta">
+                Volver
+            </button>
+
+            <div class="carta-escena">
+
+                <div class="sobre" id="sobre">
+
+                    <div class="sobre-parte sobre-frente"></div>
+
+                    <div class="tapa-sobre"></div>
+
+                    <div class="sello">
+                        A
+                    </div>
+
+                </div>
+
+                <p class="indicacion-sobre">
+                    Mira lo que escribí especialmente para ti...
+                </p>
+
+                <div
+                    class="carta-contenido"
+                    id="cartaContenido"
+                >
+
+                    <div class="hoja-carta">
+
+                        <div class="decoracion-carta">
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <h2 class="carta-titulo">Para Alisson</h2>
+
+                        <div
+                            id="textoCarta"
+                            class="texto-carta"
+                        ></div>
+
+                        <div
+                            id="marcoFoto"
+                            class="marco-foto"
+                        >
+
+                            <div class="clavo"></div>
+
+                            <div class="cinta-cork cinta-cork-1"></div>
+
+                            <div class="cinta-cork cinta-cork-2"></div>
+
+                            <div class="foto-polaroid">
+
+                                <video
+                                    src="Img/Mstitch.mp4"
+                                    autoplay
+                                    muted
+                                    loop
+                                    playsinline
+                                    aria-label="Video de Stitch"
+                                ></video>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button
+                    class="boton-principal boton-continuar-carta"
+                    id="btnContinuarCarta"
+                >
+                    Continuar
+                </button>
+
+                <button
+                    class="boton-carta-completa"
+                    id="btnCartaCompleta"
+                    type="button"
+                >
+                    Carta Completa
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section id="escenaMensaje" class="escena">
+
+            <button
+                class="boton-regresar"
+                id="btnRegresarMensaje"
+            >
+                Volver
+            </button>
+
+            <div class="mensaje-final-carta">
+
+                <div class="hoja-mensaje">
+
+                    <div class="flor-mensaje"></div>
+
+                    <h2>Una última cosa...</h2>
+
+                    <div
+                        id="textoMensaje"
+                        class="texto-mensaje"
+                    ></div>
+
+                </div>
+
+                <button
+                    class="boton-principal"
+                    id="btnContinuarMensaje"
+                >
+                    Continuar
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="escenaSiguiente"
+            class="escena escena-final"
+        >
+
+            <div
+                id="contadorFinal"
+                class="contador-final"
+            >
+                5
+            </div>
+
+            <div
+                id="contenidoFinal"
+                class="contenido-final"
+            >
+
+                <div id="lluviaFlores"></div>
+
+                <video
+                    class="stitch-lluvia"
+                    data-key-white
+                    src="Img/stitch.mp4"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    aria-hidden="true"
+                ></video>
+
+                <div class="mensaje-final">
+
+                    <span>
+                        Te regale estás flores porque así como ellas no te voy a dejar de querer nunca.. Feliz inicio de Primavera 🌼
+                    </span>
+
+                    <strong>
+                        Alisson✨...
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="escenaCreditos"
+            class="escena escena-creditos"
+        >
+
+            <div class="creditos-contenido">
+
+                <div class="marca-agua">
+                    ArlessG Technology
+                </div>
+
+                <h2>
+                    Gracias por llegar hasta aquí
+                </h2>
+
+                <div class="linea-creditos"></div>
+
+                <p>
+                    Create By: Omar Yépez
+                </p>
+
+                <p>
+                    Developed by Jordy A.
+                </p>
+
+                <div class="arless">
+                    ArlessG Technology
+                </div>
+
+                <p class="contacto">
+                    Una pequeña creación hecha con cariño.
+                </p>
+
+                <button
+                    class="boton-end"
+                    id="btnEnd"
+                >
+                    END
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js?v=13"></script>
+
+</body>
+</html>
